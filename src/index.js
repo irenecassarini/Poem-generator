@@ -10,9 +10,10 @@ new Typewriter("#poem", {
 function generatePoem(event) {
   event.preventDefault();
 
+    let instructionsInput = document.querySelector("#user-instructions");
     let apiKey = "334ff5a8425o317bf171aa4a1a6b3b0t";
-    let context = "Please create a short poem with an anticapitalist perspective";
-    let prompt = "Create a short poem about this topic";
+    let context = `Please create a short poem with an anticapitalist perspective about ${instructionsInput.value}`;
+    let prompt = "Create a short poem about this topic"; 
     let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`; 
 
     axios(apiUrl).then(displayPoem);
