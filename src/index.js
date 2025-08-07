@@ -3,7 +3,15 @@ event.preventDefault();
 
 let poemElement = document.querySelector("#poem");
 poemElement.innerHTML = "ACAB";
-alert("generating Poem");
+
+new Typewriter("poem",{
+    strings: "ACAB",
+    autostart: true,
+    cursor: "",
+}
+
+)
+
 }
 
 let poemFormElement = document.querySelector("poem-generator-form");
