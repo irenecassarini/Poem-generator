@@ -34,6 +34,14 @@ form {
     color: #272044;
 }
 
+.form-container {
+    background-color: white;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+    padding: 15px 20px;
+}
+
 .instructions {
     padding: 16px;
     border: 1px solid rgba(39, 33, 66, 0.5);
