@@ -1,7 +1,7 @@
 function generatePoem(event){
 event.preventDefault();
 
-new Typewriter("poem", {
+new Typewriter("#poem", {
     strings: "ACAB",
     autostart: true,
     cursor: "",
