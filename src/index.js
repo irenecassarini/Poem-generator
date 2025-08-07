@@ -10,4 +10,4 @@ new Typewriter("#poem", {
 }
 
 let poemFormElement = document.querySelector("poem-generator-form");
-poemFormElement.addEventListener("click", generatePoem);
+poemFormElement.addEventListener("submit", generatePoem);
