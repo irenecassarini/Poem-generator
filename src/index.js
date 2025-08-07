@@ -12,7 +12,7 @@ function generatePoem(event) {
 
     let apiKey = "334ff5a8425o317bf171aa4a1a6b3b0t";
     let context = "Please create a short poem with an anticapitalist perspective";
-    let prompt = "Create a poem about this topic";
+    let prompt = "Create a short poem about this topic";
     let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`; 
 
     axios(apiUrl).then(displayPoem);
