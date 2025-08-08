@@ -16,11 +16,11 @@ function generatePoem(event) {
     let prompt = `Please create a short poem with an anticapitalist perspective about ${instructionsInput.value}`;
     let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`; 
  
-    let poemElement = document.querySelector("#poem");
+  let poemElement = document.querySelector("#poem");
    poemElement.classList.remove("hidden");
    poemElement.innerHTML = `<div class="generating">⏳ Generating a poem about ${instructionsInput.value}</div>`;
 
-   axios.get(apiURL).then(displayPoem);
+   axios(apiURL).then(displayPoem);
 }
 
 let poemFormElement = document.querySelector("#poem-generator-form");
